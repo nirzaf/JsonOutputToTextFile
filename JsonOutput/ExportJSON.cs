@@ -55,22 +55,6 @@ namespace JsonOutput
                     string serializedJson = JsonConvert.SerializeObject(exp, Formatting.Indented);
                     File.WriteAllText(path, serializedJson);
                 }
-                //string jsonFile = @"Exceptions.Json";
-                //string rawJson = File.ReadAllText(jsonFile);
-                //ExpCollection ec = new ExpCollection();
-                //ec = JsonConvert.DeserializeObject<ExpCollection>(rawJson);
-                ////int Count = ec.Exceptions.Count;
-                //Exp Exps = new Exp
-                //{
-                //    Id = 1,
-                //    Time = DateTime.Now.ToShortTimeString(),
-                //    Date = DateTime.Today.ToShortDateString(),
-                //    Message = ex.Message.ToString(),
-                //    StackTrace = ex.StackTrace.ToString()
-                //};
-                //ec.Exceptions.Add(Exps);
-                //string serializedJson = JsonConvert.SerializeObject(ec, Formatting.Indented);
-                //File.WriteAllText(@"Exceptions.Json", serializedJson);
             }
             catch (Exception e)
             {
